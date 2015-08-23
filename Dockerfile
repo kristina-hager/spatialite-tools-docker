@@ -7,4 +7,6 @@ MAINTAINER Kristina Hager
 RUN apt-get update
 RUN apt-get install --yes libspatialite-dev spatialite-bin
 
-CMD which spatialite --v
+COPY /Users/kristina/Desktop/GIS_project/GIS_data 
+
+CMD spatialite --version
