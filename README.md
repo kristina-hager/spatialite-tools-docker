@@ -26,7 +26,7 @@ Once the container has started, here are some example commands. Please see [spat
 
 - Tell Spatialite to load the shapefiles.
 
-Note, the last parameter '2277' is the SRID of the input data and is critical!
+Note, the last parameter '2277' is the SRID of the input data and is critical! [How to find this info](http://stackoverflow.com/questions/1541202/how-do-you-know-what-srid-to-use-for-a-shp-file)
 
 `.loadshp /mnt/single_member_districts districts cp1252 2277`
 
