@@ -3,7 +3,7 @@
 One way you can use this Docker container is to run spatialite command-line tools interactively.
 I use this to avoid the hassle of settings things up on my personal laptop.
 
-Here's an example scenario:
+## Example Invocation of Docker Container
 
 - Download some shapefiles to your desktop to a path like:
 
@@ -13,6 +13,8 @@ You can get a copy of the same data I used [here](https://data.austintexas.gov/G
 
 - Invoke the container like this giving the docker read only access to those shapefiles:
 `docker run -v ~/Desktop/GIS_project/GIS_data/Single_Member_Council_Districts:/mnt:ro -i -t docker-spatialite /bin/bash`
+
+## Example Usage of Spatialite
 
 Once the container has started, here are some example commands. Please see [spatialite docs](https://www.gaia-gis.it/fossil/libspatialite/index) for more options and explanations. I found [this tutorial](http://www.gaia-gis.it/gaia-sins/spatialite-tutorial-2.3.1.html) and [this tutorial](http://www.gaia-gis.it/gaia-sins/spatialite-cookbook/html/start.html) helpful.
 
